@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>TAREA PARA GITHUB</title>
+<script type="text/javascript">
+	function obtenerdatos()
+	{
+		var boleta = document.getElementById('boleta').value;
+		var nombre = document.getElementById('nombre').value;
+		var grupo = document.getElementById('grupo').value;
+		var materia = document.getElementById('materia').value;
+		var fecha = document.getElementById('fecha').value; 
+
+
+		document.registro.BoletaObtenido.value = boleta;
+		document.registro.NombreObtenido.value = nombre;
+		document.registro.GrupoObtenido.value = grupo;
+		document.registro.MateriaObtenido.value = materia;
+		document.registro.FechaObtenido.value = fecha;
+
+	}
+</script>
+</head>
+<body>
+	<header>
+		<h1>
+			FORMULARIO PARA GITHUB
+		</h1>
+	</header>
+<form name="registro">
+
+<p>
+	Boleta: <input type="text" name="boleta" id="boleta">
+	Nombre: <input type="text" name="nombre" id="nombre" >
+	Grupo: <input type="text" name="grupo" id="grupo" >
+	Materia: <input type="text" name="materia" id="materia">
+	Fecha: <input type="text" name="fecha" id="fecha">
+</p>
+<p>
+	<input type="button" name="btn1" value="Enviar" onclick="obtenerdatos()">
+</p>
+	
+<p>
+	Boleta: <input type="text" name="BoletaObtenido" id="BoletaObtenido">
+	Nombre:<input type="text" name="NombreObtenido" id="NombreObtenido" >
+	Grupo:<input type="text" name="GrupoObtenido" id="GrupoObtenido" >
+	Materia: <input type="text" name="MateriaObtenido" id="MateriaObtenido" >
+	Fecha: <input type="text" name="FechaObtenido" id="FechaObtenido">
+</p>
+</form>
+</center>
+</body>
+</html>
